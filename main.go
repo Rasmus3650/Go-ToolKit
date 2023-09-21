@@ -1,5 +1,7 @@
 package main
 
+import "ToolKit/Recon"
+
 func main() {
-	RunScan()
+	Recon.RunScan()
 }
