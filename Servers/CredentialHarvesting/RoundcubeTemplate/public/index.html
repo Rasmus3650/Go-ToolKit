@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+
+<html lang="da">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Roundcube Webmail :: Velkommen til Roundcube Webmail</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0"><meta name="theme-color" content="#f4f4f4"><meta name="msapplication-navbutton-color" content="#f4f4f4">
+	<link rel="shortcut icon" href="skins/elastic/images/favicon.ico?s=1694765308">
+	<link rel="stylesheet" href="index_files/bootstrap.min.css?s=1694765322">
+	
+		<link rel="stylesheet" href="index_files/styles.css?s=1694765308">
+		
+	
+	
+		<script>
+		try {
+			if (document.cookie.indexOf('colorMode=dark') > -1
+				|| (document.cookie.indexOf('colorMode=light') === -1 && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.className += ' dark-mode';
+			}
+		} catch (e) { }
+		</script>
+	
+<link rel="stylesheet" type="text/css" href="index_files/jquery-ui.min.css?s=1694765308"><script src="index_files/jquery.min.js?s=1694765311"></script><script src="index_files/common.js?s=1694765308"></script><script src="index_files/app.js?s=1694765308"></script><script src="index_files/jstz.min.js?s=1694765311"></script><script>
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","standard_windows":false,"locale":"da_DK","devel_mode":null,"rcversion":10603,"cookie_domain":"","cookie_path":"/","cookie_secure":false,"dark_mode_support":true,"skin":"elastic","blankpage":"skins/elastic/watermark.html","refresh_interval":60,"session_lifetime":600,"action":"","comm_path":"/?_task=login","compose_extwin":false,"date_format":"yy-mm-dd","date_format_localized":"ÅÅÅÅ-MM-DD","request_token":"1plgTaOowW0xp1fnzAWd5CXgrCYV6stC"});
+rcmail.add_label({"loading":"Indlæser...","servererror":"Serverfejl!","connerror":"Forbindelsesfejl (kunne ikke oprette forbindelse til server)!","requesttimedout":"Forespørgslen tog for lang tid","refreshing":"Opdaterer...","windowopenerror":"Pop op-vinduet blev blokeret!","uploadingmany":"Uploader filer...","uploading":"Uploader fil...","close":"Luk","save":"Gem","cancel":"Annullér","alerttitle":"Opmærksomhed","confirmationtitle":"Er du sikker...","delete":"Slet","continue":"Fortsæt","ok":"OK","back":"Tilbage","errortitle":"Der opstod en fejl!","options":"Indstillinger","plaintoggle":"Almindelig tekst","htmltoggle":"HTML","previous":"Forrige","next":"Næste","select":"Vælg","browse":"Gennemse","choosefile":"Vælg fil...","choosefiles":"Vælg filer..."});
+rcmail.gui_container("loginfooter","login-footer");rcmail.gui_object('loginform', 'login-form');
+rcmail.gui_object('message', 'messagestack');
+</script>
+
+<script src="index_files/jquery-ui.min.js"></script><script src="plugins/jqueryui/js/i18n/datepicker-da.js"></script>
+</head>
+<body class="task-login action-none">
+	
+		<div id="layout">
+	
+
+
+<h1 class="voice">Roundcube Webmail Log på</h1>
+
+<div id="layout-content" class="selected no-navbar" role="main">
+	<img src="index_files/logo.svg" id="logo" alt="Logo">
+	<form id="login-form" name="login-form" method="post" class="propform" action="/login">
+<input type="hidden" name="_token" value="1plgTaOowW0xp1fnzAWd5CXgrCYV6stC">
+	<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input type="hidden" name="_timezone" id="rcmlogintz" value="_default_"><input type="hidden" name="_url" id="rcmloginurl" value=""><table><tbody><tr><td class="title"><label for="rcmloginuser">Brugernavn</label></td><td class="input"><input name="_user" id="rcmloginuser" required size="40" class="form-control" autocapitalize="off" autocomplete="off" value="" type="text"></td></tr><tr><td class="title"><label for="rcmloginpwd">Adgangskode</label></td><td class="input"><input name="_pass" id="rcmloginpwd" required size="40" class="form-control" autocapitalize="off" autocomplete="off" type="password"></td></tr></tbody></table><p class="formbuttons"><button type="submit" id="rcmloginsubmit" class="button mainaction submit">Log på</button></p>
+		<div id="login-footer" role="contentinfo">
+			Roundcube Webmail
+			
+			
+			
+		</div>
+	</form>
+</div>
+
+<noscript>
+	<p class="noscriptwarning">Advarsel: Denne webmailclient kræver Javascript! For at kunne bruge den slå venligst Javascripts til i din browserindstillinger.</p>
+</noscript>
+
+
+</div>
+
+
+
+<div id="messagestack"></div>
+<script>
+$(function() {
+rcmail.init();
+});
+</script>
+
+
+
+<script src="index_files/bootstrap.bundle.min.js"></script>
+<script src="index_files/ui.min.js"></script>
+
+</body>
+</html>
